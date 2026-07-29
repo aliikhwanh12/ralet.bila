@@ -1,0 +1,121 @@
+:root {
+  --sky-primary: #4FB8E8;
+  --sky-light: #E7F5FC;
+  --sky-lighter: #F5FBFE;
+  --sky-dark: #2E8BC0;
+  --sky-accent: #87CEEB;
+  --text-main: #1F2D3D;
+  --text-muted: #6B7A90;
+}
+
+body {
+  background-color: var(--sky-lighter);
+  color: var(--text-main);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+  --bs-btn-bg: var(--sky-primary);
+  --bs-btn-border-color: var(--sky-primary);
+  --bs-btn-hover-bg: var(--sky-dark);
+  --bs-btn-hover-border-color: var(--sky-dark);
+  --bs-btn-active-bg: var(--sky-dark);
+  --bs-btn-active-border-color: var(--sky-dark);
+  --bs-btn-disabled-bg: var(--sky-accent);
+  --bs-btn-disabled-border-color: var(--sky-accent);
+}
+.btn-outline-primary {
+  --bs-btn-color: var(--sky-dark);
+  --bs-btn-border-color: var(--sky-primary);
+  --bs-btn-hover-bg: var(--sky-primary);
+  --bs-btn-hover-border-color: var(--sky-primary);
+  --bs-btn-active-bg: var(--sky-dark);
+}
+.text-primary { color: var(--sky-dark) !important; }
+a { color: var(--sky-dark); }
+a:hover { color: var(--sky-primary); }
+
+/* ===== Navbar ===== */
+.navbar-sky {
+  background-color: #fff;
+  border-bottom: 2px solid var(--sky-light);
+  box-shadow: 0 2px 8px rgba(79, 184, 232, .08);
+}
+.navbar-sky .navbar-brand { color: var(--sky-dark); font-weight: 700; }
+
+/* ===== Cards ===== */
+.card {
+  border: 1px solid var(--sky-light);
+  border-radius: .75rem;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(79, 184, 232, .18);
+}
+.product-thumb {
+  height: 160px;
+  object-fit: cover;
+  background: var(--sky-light);
+  border-top-left-radius: .75rem;
+  border-top-right-radius: .75rem;
+}
+.product-thumb-placeholder {
+  height: 160px;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, var(--sky-light), var(--sky-accent));
+  color: var(--sky-dark);
+  font-size: 2.5rem; font-weight: 700;
+  border-top-left-radius: .75rem;
+  border-top-right-radius: .75rem;
+}
+
+/* ===== Hero / sections ===== */
+.hero {
+  background: linear-gradient(135deg, var(--sky-light), #ffffff);
+  border-radius: 1rem;
+}
+.price-tag { color: var(--sky-dark); font-weight: 700; }
+
+/* ===== Stat cards (admin) ===== */
+.stat-card {
+  border-left: 4px solid var(--sky-primary);
+  background: #fff;
+}
+.stat-card .stat-value { font-size: 1.6rem; font-weight: 700; color: var(--sky-dark); }
+
+/* ===== Admin sidebar ===== */
+.admin-sidebar {
+  background: #fff;
+  border-right: 1px solid var(--sky-light);
+  min-height: 100vh;
+}
+.admin-sidebar .nav-link {
+  color: var(--text-main);
+  border-radius: .5rem;
+  margin-bottom: .25rem;
+}
+.admin-sidebar .nav-link:hover { background: var(--sky-light); }
+.admin-sidebar .nav-link.active {
+  background: var(--sky-primary);
+  color: #fff;
+}
+
+/* ===== QRIS box ===== */
+.qris-box {
+  background: #fff;
+  border: 2px dashed var(--sky-accent);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+.qris-box img { max-width: 280px; width: 100%; }
+
+/* ===== Misc ===== */
+.badge-status { font-size: .8rem; padding: .4em .7em; }
+footer.site-footer {
+  background: #fff;
+  border-top: 2px solid var(--sky-light);
+  color: var(--text-muted);
+}
