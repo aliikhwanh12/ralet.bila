@@ -140,8 +140,3 @@ Logika penambahan/pengembalian stok ada di `App\Models\Order::reserveStock()` / 
 | resource (shallow) | `/admin/products/{product}/variants`, `/admin/variants/{variant}` | `admin.products.variants.*`, `admin.variants.*` |
 | resource (shallow) | `/admin/variants/{variant}/options`, `/admin/options/{option}` | `admin.variants.options.*`, `admin.options.*` |
 | GET/PUT | `/admin/settings` | `admin.settings.edit`, `admin.settings.update` |
-
-## Dokumen Perencanaan
-- `requirements.md` — kebutuhan fungsional & non-fungsional
-- `design.md` — desain teknis, routing, skema DB
-- `task.md` — checklist implementasi
